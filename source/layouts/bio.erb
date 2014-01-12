@@ -1,0 +1,83 @@
+<% wrap_layout :layout do %>
+
+	 <section class="header-10-sub v-center bg-midnight-blue" style="box-shadow: 0 0 8px rgba(0, 0, 0, .8);-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);">
+            <div class="background" style="background-image: url(<%= current_page.data.UpperBackground %>);opacity: 0.45;filter: alpha(opacity=45);">&nbsp;</div>
+            <div>
+                <div class="container">
+                    <div class="hero-unit">
+
+					  <div class="span2"></div>
+					  <div class="span4">
+                        <h1 style="text-align:left"><%= current_page.data.Name %></h1>
+						<p style="text-align:left; font-size:14pt">
+						<%= current_page.data.Title %><br/>
+						<%= current_page.data.Department %><br/>
+						<%= current_page.data.University %><br/>
+						</p>
+					  </div>
+						
+					  <div class="span3">
+					    <div style="width: 300px;height: 300px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;background: url(<%= current_page.data.Photo %>) no-repeat;box-shadow: 0 0 8px rgba(0, 0, 0, .8);-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);"></div>
+					  </div>
+
+					</div>
+				</div>
+			</div>
+			<a class="control-btn fui-arrow-down" href="#"> </a>
+	</section>
+	
+	<section style="background: url(/img/squared_metal.png)" class="content-6">
+			<div class="container">
+                <p>
+					<% first = true %>
+							
+							<% current_page.data.Accomplishments.each do |key,items| %>
+							
+							<% if first 
+							     first = false
+							%>
+							    
+							<h4><%= key %></h4>
+							<ol>
+								<% items.each do |value| %>
+									<li><%= value %></li>
+								<% end %>
+							</ol>
+							<% end %>
+					<% end %>	
+				</p>
+			</div>
+	</section>
+	
+	
+	<section style="background:#EEEEEE" class="content-6">
+			<div class="container">
+                        <p>
+						    <% first = true %>
+							
+							<% current_page.data.Accomplishments.each do |key,items| %>
+							
+							<% if !first %>
+							    
+							<h4><%= key %></h4>
+							<ol>
+								<% items.each do |value| %>
+									<li><%= value %></li>
+								<% end %>
+							</ol>
+							<% else 
+							  first = false
+							%>
+							<% end %>
+							<% end %>
+						</p>
+					
+							
+                           <%= yield %>
+						   
+                        </p>
+            </div>
+            
+    </section>
+
+<% end %>
