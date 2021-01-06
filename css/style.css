@@ -46,8 +46,6 @@ a {
   text-decoration: none;
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
   transition: 0.25s;
 }
 a:hover {
@@ -168,13 +166,9 @@ blockquote:before {
   bottom: 0;
   background-color: #ebedee;
   content: "";
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
 }
 .img-rounded {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
 }
 .img-comment {
@@ -236,13 +230,12 @@ footer {
   background-color: transparent;
 }
 .input-append input {
-  -webkit-border-radius: 6px 0 0 6px;
-  -moz-border-radius: 6px 0 0 6px;
   border-radius: 6px 0 0 6px;
 }
 .navbar-fixed-top .navbar-inner,
 .navbar-static-top .navbar-inner {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /* end only for flat-ui free*/
 .bg-white {
@@ -378,7 +371,6 @@ header,
 footer {
   position: relative;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 @media (max-width: 767px) {
@@ -448,7 +440,6 @@ button:active {
 @media (max-width: 979px) {
   .navbar .nav-collapse {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -525,7 +516,8 @@ button:active {
     padding: 10px 35px;
     border-bottom: 0 none;
     border-top: 0 none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .navbar .nav-collapse .navbar-form:focus,
   .navbar .nav-collapse .navbar-search:focus {
@@ -535,8 +527,6 @@ button:active {
   .navbar .nav-collapse {
     -webkit-backface-visibility: hidden;
     -webkit-transition: left 0.4s;
-    -moz-transition: left 0.4s;
-    -o-transition: left 0.4s;
     transition: left 0.4s;
   }
   .nav-visible body > * {
@@ -590,18 +580,12 @@ section * {
   bottom: 0;
   z-index: 1;
   background: 50% 50% no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
 @media (max-width: 768px) {
   .background {
-    -webkit-background-size: auto 200%;
-    -moz-background-size: auto 200%;
-    -o-background-size: auto 200%;
     background-size: auto 200%;
   }
 }
@@ -614,7 +598,6 @@ section * {
     padding-left: 20px;
     padding-right: 20px;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 }
@@ -626,7 +609,8 @@ section * {
 .nav-visible .nav-collapse .navbar-search {
   border-bottom: 0 none;
   border-top: 0 none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   margin: 10px 0;
   padding: 10px 15px;
 }
@@ -731,8 +715,6 @@ section * {
 .header-10 .navbar .btn-navbar {
   margin: 27px 0 17px;
   padding: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
   border: 0;
   background: none!important;
@@ -750,7 +732,6 @@ section * {
   .header-10 .navbar .nav-collapse {
     padding-top: 17px;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -858,7 +839,6 @@ section * {
   .header-10-sub.v-center,
   .header-10-sub .v-center {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 20px;
     padding-right: 20px;
@@ -1028,7 +1008,6 @@ section * {
   .content-7.v-center,
   .content-7 .v-center {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 20px;
     padding-right: 20px;
@@ -1137,7 +1116,6 @@ section * {
 }
 .content-8 .btn.btn-clear {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: none;
   border: 2px solid #e74c3c;
@@ -1185,7 +1163,6 @@ section * {
   .content-8.v-center,
   .content-8 .v-center {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 20px;
     padding-right: 20px;
@@ -1244,9 +1221,6 @@ section * {
 .content-23 {
   position: relative;
   height: 800px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   color: white;
 }
@@ -1275,7 +1249,6 @@ section * {
   .content-23.v-center,
   .content-23 .v-center {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 20px;
     padding-right: 20px;
@@ -1411,7 +1384,6 @@ section * {
   .footer-3.v-center,
   .footer-3 .v-center {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 20px;
     padding-right: 20px;

@@ -8,7 +8,6 @@
  * Corrects `block` display not defined in IE 8/9.
  */
 
-
 article,
 aside,
 details,
@@ -315,7 +314,8 @@ input[disabled] {
 
 input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box; /* 1 */
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; /* 1 */
     padding: 0; /* 2 */
 }
 
@@ -327,7 +327,6 @@ input[type="radio"] {
 
 input[type="search"] {
     -webkit-appearance: textfield; /* 1 */
-    -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box; /* 2 */
     box-sizing: content-box;
 }
